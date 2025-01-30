@@ -16,3 +16,46 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+.gallery-image {
+  /* width : 360px;
+  height :200px; */
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.gallery-link {
+  
+}
+.gallery-item {
+ 
+}
+.main-title {
+/* text-align: center;   */
+color: rgb(13, 4, 21);
+}
+  
+.modal-image {
+  margin-left: auto;
+  margin-right: auto;
+  /* display: block; */
+  text-align: center;
+ }
+ .info-about{
+  display: flex;
+  gap: 5px;
+  flex-direction: row;
+ }
+.info{
+  display: flex;
+  flex-direction: column;
+}
+.cl-name {
+  font-size: 9px;
+}
+.cl-number {
+  font-size: 8px;
+  text-align: center;
+}
