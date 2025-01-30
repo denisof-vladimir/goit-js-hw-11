@@ -59,3 +59,8 @@ color: rgb(13, 4, 21);
   font-size: 8px;
   text-align: center;
 }
+.search-form{
+  /* text-align: center; */
+ 
+  font-size:30px;
+}
