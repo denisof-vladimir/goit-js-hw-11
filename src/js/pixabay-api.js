@@ -11,6 +11,7 @@ import {createGaleryCard} from './render-functions';
 
 export const TestAndSearch = event => {
     event.preventDefault();
+
     const API_KEY = '48542018-8722dafc38583a35c899e9bbe';
     const dataUserQuery=event.currentTarget.elements.userQuery.value.trim();
     if (dataUserQuery.length ==0){
@@ -45,13 +46,14 @@ export const TestAndSearch = event => {
                     message: 'Sorry, there are no images matching your search query. Please try again!.'
                 });
                 galleryUlList.innerHTML= '';
-                // startBtn.reset();
+                event.reset();
                 return;
                 }          
 
             const gallerySmallCard = '<div class="loader"></div>'+
                     pictInfo.map(pictInfo => createGaleryCard(pictInfo)).join('');
             galleryUlList.innerHTML= gallerySmallCard;
+            
             new SimpleLightbox('.gallery-item a',{captionsData: 'alt', captionDelay:250});
             
             
