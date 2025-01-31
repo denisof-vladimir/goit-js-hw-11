@@ -10,6 +10,7 @@ import "simplelightbox/dist/simple-lightbox.min.css";
 // import {createGaleryCard} from './js/render-functions';
 import {TestAndSearch} from './js/pixabay-api';
 
+
 // const galleryUlList = document.querySelector('.js-gallery');
 // console.log(galleryUlList);
 // const SelectInput = document.querySelector('userQuery');
